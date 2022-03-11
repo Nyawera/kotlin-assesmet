@@ -1,13 +1,4 @@
 fun main(){
-    school()
-    remain()
-    names()
-
-
-
-}
-
-fun school() {
     var name = "codeHive"
     var a= (name[4])
     var b = (name[5])
@@ -15,13 +6,26 @@ fun school() {
     var d= (name [7])
     var school=a.toString()+b+c+d
     println(school)
+    names()
+
+    var campus = "Akirachix"
+    println(campus.length)
+
+
+    var division = remain(20,6)
+    println(division)
+
+
+
+
+
+
 }
 
-fun remain() {
-    var numberone= 69
-    var numbertwo =37
-    var modulus = numberone%numbertwo
-    println(modulus)
+
+fun remain(numb1:Int,numb2:Int):Int{
+    var modulus = numb1%numb2
+    return modulus
 
 }
 
@@ -30,10 +34,7 @@ fun names() {
     var age = 22
     println("my name is $name and I am $age years old")
 }
-fun get(height: String):Int {
-    return height.length
 
-}
 
 
 
